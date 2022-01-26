@@ -1,0 +1,249 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 172, 555
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "da tool box"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Disconnect DMA",ID_BTN_DMA_SHUTDOWN,84,96,66,14,WS_DISABLED
+    PUSHBUTTON      "Exit",ID_EXIT,7,529,155,14
+    DEFPUSHBUTTON   "Connect DMA",ID_BTN_DMA_CONNECT,18,96,60,14
+    DEFPUSHBUTTON   "Remove Visor Effect",ID_BTN_VISOR_EFFECT,12,315,150,14,WS_DISABLED
+    DEFPUSHBUTTON   "Enable Night Vision",ID_BTN_NIGHTVISION,12,347,150,14,WS_DISABLED
+    DEFPUSHBUTTON   "Enable Thermal Vision",ID_BTN_THERMAL,12,331,150,14,WS_DISABLED
+    CONTROL         "No Recoil && No Sway",IDC_NORECOIL,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,27,289,138,10
+    CONTROL         "Unlimited Endurance / Stamina",IDC_ENDURANCE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,27,300,138,10
+    CONTROL         "Close All Other DMA Connections",IDC_REMOVE_CONNECTIONS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,150,138,10
+    GROUPBOX        "DMA Connection",IDC_STATIC,6,84,162,84
+    CONTROL         "Use MMap.txt",IDC_USE_MMAP_FILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,126,138,10
+    CONTROL         "Stealth Connection (FW 4.7+ req)",IDC_USE_STEALTH_CONNECTION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,138,138,10
+    LTEXT           "Connection Status:",IDC_STATIC,18,18,62,8
+    LTEXT           "Disconnected!",IDC_CONNECTION_STATUS,93,18,72,8
+    GROUPBOX        "Hack Functions",IDC_STATIC,6,276,162,93
+    LTEXT           "Remote Process Id:",IDC_STATIC,18,30,64,8
+    LTEXT           "N/A",IDC_PROCESS_ID,93,30,72,8
+    CONTROL         "Auto Disconnect After Raid End's",IDC_AUTO_DISCONNECT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,114,138,10
+    GROUPBOX        "Skills",IDC_STATIC,6,174,162,96
+    PUSHBUTTON      "Set Skills Level",IDC_BTN_SKILLS,12,246,150,18,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Local Player:",IDC_STATIC,18,66,60,8
+    LTEXT           "Dead / Not Found",IDC_PLAYER_STATUS,93,66,72,8
+    GROUPBOX        "Status",IDC_STATIC,6,6,162,75
+    LTEXT           "World:",IDC_STATIC,18,42,60,8
+    LTEXT           "Not Found",IDC_WORLD_STATUS,93,42,72,8
+    LTEXT           "Location:",IDC_STATIC,18,54,60,8
+    LTEXT           "Not In A Location",IDC_STATUS_LOCATION,93,54,72,8
+    GROUPBOX        "Buffs",IDC_STATIC,12,186,150,54
+    CONTROL         "",IDC_JUMP_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,18,210,42,12
+    CONTROL         "",IDC_THROW_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,66,210,42,12
+    CONTROL         "",IDC_HEARING_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,123,210,42,12
+    CTEXT           "Jump",IDC_STATIC,18,198,42,8
+    CTEXT           "Throw",IDC_STATIC,66,198,42,8
+    CTEXT           "Hearing",IDC_STATIC,123,198,42,8
+    CTEXT           "1x",IDC_JUMP_TEXT,18,222,42,8
+    CTEXT           "1x",IDC_THROW_TEXT,66,222,42,8
+    CTEXT           "1x",IDC_HEARING_TEXT,123,222,42,8
+    GROUPBOX        "Aimbot",IDC_STATIC,6,370,156,117
+    CONTROL         "Enable",IDC_AIMBOT_ENABLE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,18,383,36,10
+    GROUPBOX        "Single Bones",IDC_STATIC,21,396,144,87
+    PUSHBUTTON      "L Button",IDC_AIMBOT_HOTKEY,13,502,144,18,WS_DISABLED
+    CTEXT           "Hotkey",IDC_STATIC,13,492,144,8
+    CONTROL         "Foot Left",IDC_AIMBOT_LFOOT,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,18,449,45,10
+    CONTROL         "Foot Right",IDC_AIMBOT_RFOOT,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,18,462,49,10
+    CONTROL         "Randomize Bones",IDC_AIMBOT_RANDOM,"Button",BS_AUTORADIOBUTTON | BS_LEFTTEXT | WS_DISABLED,82,382,72,10
+    CONTROL         "Head",IDC_AIMBOT_HEAD,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,18,411,33,10
+    CONTROL         "Chest",IDC_AIMBOT_CHEST,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,18,424,35,10
+    CONTROL         "Hip",IDC_AIMBOT_PELVIS,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,18,436,26,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 547
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MAIN_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SERIAL_DIALOG DIALOGEX 0, 0, 309, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Verify",IDOK,12,108,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,246,108,50,14
+    EDITTEXT        IDC_HWID,12,18,282,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "HWID",IDC_STATIC,6,6,294,30
+    CTEXT           "Serial/HWID is invalid!",IDC_STATUS_TEXT,66,108,174,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_SERIAL,12,54,282,43,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    GROUPBOX        "Serial",IDC_STATIC,6,42,294,60
+END
+
+IDD_SKILL_BUF_DIALOG DIALOGEX 0, 0, 303, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Skill Buff's"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_SKILLS_LIST,12,18,138,138,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Skill(s) List",IDC_STATIC,6,6,150,156
+    GROUPBOX        "Skill Data",IDC_STATIC,162,6,132,156
+    CONTROL         "",IDC_LEVEL_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,174,42,114,12
+    RTEXT           "0",IDC_LEVEL_TEXT,234,54,48,8,WS_DISABLED
+    GROUPBOX        "Level",IDC_STATIC,168,18,120,54
+    CONTROL         "Enable",IDC_ENABLE_LEVEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,180,30,102,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SERIAL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_SKILL_BUF_DIALOG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SERIAL_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SKILL_BUF_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
